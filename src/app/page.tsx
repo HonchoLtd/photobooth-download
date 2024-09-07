@@ -2,7 +2,7 @@
 import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 
-const Page = () => {
+export default function Home() {
   const searchParams = useSearchParams();
   const url = searchParams.get('url');
   const [downloading, setDownloading] = useState(false);
@@ -49,4 +49,3 @@ const Page = () => {
   );
 }
 
-export default Page;
