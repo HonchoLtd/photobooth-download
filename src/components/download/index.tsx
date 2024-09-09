@@ -41,7 +41,7 @@ const index = () => {
         <div className='bg-black flex justify-center items-center w-full h-screen'>
             <div className='flex flex-col gap-4'>
                 <video className="rounded-md w-80 md:h-96 h-80 md:h-96" src={url} muted autoPlay={true} loop />
-                <button onClick={downloadVideo} disabled={downloading} className="px-8 py-2 rounded-md bg-blue-400 text-white">{downloading ? 'Downloading...' : 'Download'}</button>
+                <button onClick={downloadVideo} disabled={downloading} className="px-8 py-2 rounded-md bg-black border border-white text-white">{downloading ? 'Downloading...' : 'Download'}</button>
             </div>
 
         </div>
